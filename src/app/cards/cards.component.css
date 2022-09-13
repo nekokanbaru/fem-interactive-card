@@ -1,0 +1,119 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .card-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". card-back card-back card-back"
+    "card-front card-front  card-front .";
+  background-color: purple;
+}
+
+.card-front,
+.card-back {
+  min-height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-front {
+  background-image: url("../../assets/images/bg-card-front.png");
+  grid-area: card-front;
+ 
+}
+
+.card-back {
+  background-image: url("../../assets/images/bg-card-back.png");
+  grid-area: card-back;
+} */
+
+.card-wrapper {
+  width: 100%;
+  background-image: url(../../assets/images/bg-main-mobile.png);
+  position: relative;
+  height: 160px;
+  padding-top: 50px;
+}
+
+.cards-wrapper {
+  max-width: 400px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.card-front,
+.card-back {
+  min-height: 200px;
+  margin: 0 20px;
+  /* position: absolute; */
+}
+
+.card-front {
+  /* background-image: url("../../assets/images/bg-card-front.png"); */
+  position: absolute;
+  min-height: 200px;
+  max-width: 250px;
+  bottom: -120px;
+  left: 0px;
+  z-index: 1;
+}
+
+.card-front-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  color: white;
+}
+
+#card-logo {
+  width: 50px;
+  margin: 10px 0px 0px 10px;
+}
+
+#card-number {
+  margin: 20px 10px 0px 10px;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+
+.name-date {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 10px 10px;
+  font-size: 0.6rem;
+  letter-spacing: 0.15rem;
+}
+
+.card-back {
+  /* background-image: url("../../assets/images/bg-card-front.png"); */
+  position: absolute;
+  min-height: 200px;
+  max-width: 250px;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+#cvc {
+  position: absolute;
+  top: 42px;
+  right: 40px;
+  color: white;
+  z-index: 3;
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+}
