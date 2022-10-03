@@ -63,26 +63,31 @@ input {
   border: 1px solid rgba(150, 150, 150, 0.5);
 }
 
+input:focus {
+  outline: none !important;
+  border: 1px solid hsl(278, 68%, 11%);
+}
+
 button {
   margin: 0 20px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #0b0730;
-  background-color: #1e0730;
+  border: 1px solid hsl(278, 68%, 11%);
+  background-color: hsl(278, 68%, 11%);
   color: white;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #360d56;
+  background-color: hsl(278, 69%, 16%);
 }
 
 input.ng-invalid.ng-touched {
-  border: 1px solid red;
+  border: 1px solid hsl(0, 100%, 66%);
 }
 
 .warningMessage {
-  color: red;
+  color: hsl(0, 100%, 66%);
 }
 
 .submitted-message {
