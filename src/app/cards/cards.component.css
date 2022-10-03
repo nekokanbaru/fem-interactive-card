@@ -37,6 +37,8 @@ html {
 .card-wrapper {
   width: 100%;
   background-image: url(../../assets/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 160px;
   padding-top: 50px;

@@ -4,7 +4,7 @@
       <img src="../../assets/images/bg-card-front.png" alt="" />
       <div class="card-front-wrapper">
         <img id="card-logo" src="../../assets/images/card-logo.svg" />
-        <p id="card-number">{{ number }}</p>
+        <p id="card-number">{{ number | mask: "0000 0000 0000 0000" }}</p>
         <div class="name-date">
           <p id="name">{{ holder }}</p>
           <p id="date">

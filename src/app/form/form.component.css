@@ -25,7 +25,9 @@ form {
   gap: 10px;
   display: grid;
   grid-template-columns: 70px 70px 1fr;
-  grid-template-areas: "mm yy cvc cvc";
+  grid-template-areas:
+    "mm yy cvc cvc"
+    "mmyyWar mmyyWar cvcWar cvcWar";
 }
 
 #month {
@@ -36,8 +38,18 @@ form {
   grid-area: yy;
 }
 
+#mmyyWarning {
+  grid-area: mmyyWar;
+  margin-top: -5px;
+}
+
 #cvc {
   grid-area: cvc;
+}
+
+#cvcWarning {
+  grid-area: cvcWar;
+  margin-top: -5px;
 }
 
 label {
@@ -67,4 +79,25 @@ button:hover {
 
 input.ng-invalid.ng-touched {
   border: 1px solid red;
+}
+
+.warningMessage {
+  color: red;
+}
+
+.submitted-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px 10% 0 10%;
+  gap: 1.5em;
+}
+
+.submitted-message img {
+  max-width: 100px;
+}
+
+.submitted-message button {
+  width: 100%;
+  max-width: 400px;
 }

@@ -8,7 +8,7 @@ import { TransferDetailsService } from '../transfer-details.service';
 })
 export class CardsComponent implements OnInit {
   holder = 'Jane Appleseed';
-  number = '0000 0000 0000 0000';
+  number = '0000000000000000';
   mm = '00';
   yy = '00';
   cvc = '000';
