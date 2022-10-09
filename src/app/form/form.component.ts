@@ -218,4 +218,9 @@ export class FormComponent implements OnInit {
   get formState() {
     return this.isSubmitted ? 'visible' : 'hidden';
   }
+
+  toggleVisible() { //reset form after clicking on continue
+    this.isSubmitted = !this.isSubmitted;
+    this.cardForm.reset();
+  }
 }

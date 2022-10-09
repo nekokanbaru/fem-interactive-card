@@ -44,6 +44,14 @@ html {
   padding-top: 50px;
 }
 
+@media (min-width: 1440px) {
+  .card-wrapper {
+    background-image: url("../../assets/images/bg-main-desktop.png");
+    height: 100%;
+    padding-top: 500px;
+  }
+}
+
 .cards-wrapper {
   max-width: 400px;
   height: 160px;
@@ -97,6 +105,14 @@ html {
   letter-spacing: 0.15rem;
 }
 
+@media (min-width: 1440px) {
+  .card-front,
+  .card-back {
+    min-height: 500px;
+    margin: 0 20px;
+  }
+}
+
 .card-back {
   /* background-image: url("../../assets/images/bg-card-front.png"); */
   position: absolute;
@@ -118,4 +134,11 @@ html {
 .card-front img,
 .card-back img {
   width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .card-front img,
+  .card-back img {
+    width: 150%;
+  }
 }
