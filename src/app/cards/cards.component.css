@@ -6,6 +6,12 @@ html {
   padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 /* .card-wrapper {
   width: 100%;
   display: grid;
@@ -93,7 +99,7 @@ html {
 
 #card-number {
   margin: 20px 10px 0px 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.15rem;
 }
 
@@ -140,5 +146,54 @@ html {
   .card-front img,
   .card-back img {
     width: 150%;
+  }
+
+  .card-front {
+    right: 0px;
+  }
+
+  #card-logo {
+    width: 60px;
+    margin: 20px 0px 0px 20px;
+  }
+
+  #card-number {
+    margin: 60px 20px 0px 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .name-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 0px 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .cards-wrapper {
+    margin: 0px;
+    right: -200px;
+  }
+
+  .card-front-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    color: white;
+  }
+
+  #cvc {
+    top: 75px;
+    right: -70px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .cards-wrapper {
+    right: -400px;
   }
 }
