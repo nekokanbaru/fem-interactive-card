@@ -1,9 +1,13 @@
 <div class="card-wrapper">
   <div class="cards-wrapper">
     <div class="card-front">
-      <img src="../../assets/images/bg-card-front.png" alt="" />
+      <img src="../../assets/images/bg-card-front.png" alt="card front" />
       <div class="card-front-wrapper">
-        <img id="card-logo" src="../../assets/images/card-logo.svg" />
+        <img
+          id="card-logo"
+          src="../../assets/images/card-logo.svg"
+          alt="card logo"
+        />
         <p id="card-number">{{ number | mask: "0000 0000 0000 0000" }}</p>
         <div class="name-date">
           <p id="name">{{ holder }}</p>
@@ -16,7 +20,7 @@
     </div>
 
     <div class="card-back">
-      <img src="../../assets/images/bg-card-back.png" />
+      <img src="../../assets/images/bg-card-back.png" alt="card back" />
       <p id="cvc">{{ cvc }}</p>
     </div>
   </div>
